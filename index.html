@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Bomberman Canvas Game - 春节版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>炸弹人：年兽大作战</h1>
+        <div class="game-wrapper">
+            <canvas id="gameCanvas"></canvas>
+            <div id="game-overlay">
+                <h2 id="status-text">游戏结束</h2>
+                <button class="restart-btn" onclick="location.reload()">再来一局</button>
+            </div>
+        </div>
+
+        <div class="touch-controls">
+            <div class="d-pad">
+                <div class="d-btn up" id="btn-up">▲</div>
+                <div class="d-btn down" id="btn-down">▼</div>
+                <div class="d-btn left" id="btn-left">◀</div>
+                <div class="d-btn right" id="btn-right">▶</div>
+            </div>
+            <div class="action-btns">
+                <div class="fire-btn" id="btn-fire">炸</div>
+            </div>
+        </div>
+
+        <div class="ui-overlay">
+            <p>捡红包得福气，消灭年兽迎新春！</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
